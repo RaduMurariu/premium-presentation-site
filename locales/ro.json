@@ -1,0 +1,168 @@
+{
+  "hero": {
+    "badge": "SimplifyWeb Soluții Digitale",
+    "title": "Simplify",
+    "titleHighlight": "Web",
+    "titleEnd": "Solutions",
+    "subtitle": "Creăm experiențe digitale excepționale cu simplitate modernă și inovație de vârf.",
+    "cta1": "Începe Acum",
+    "cta2": "Vezi Portofoliul",
+    "scrollText": "Derulează în Jos",
+    "stats": {
+      "projects": "Proiecte",
+      "success": "Rata de Succes",
+      "support": "Suport"
+    }
+  },
+  "about": {
+    "badge": "Despre Echipa Noastră",
+    "title": "Creăm Excelență",
+    "titleHighlight": "Digitală",
+    "titleEnd": "Urbană",
+    "description": "Suntem o echipă pasionată de designeri și dezvoltatori urbani dedicați creării de experiențe digitale excepționale. Abordarea noastră combină tehnologia de vârf cu estetica urbană sofisticată și principiile de design atemporale.",
+    "link": "Descoperă Povestea Noastră",
+    "features": {
+      "team": "Echipă Colaborativă",
+      "teamDesc": "Expertiză diversă care lucrează împreună",
+      "goal": "Orientat pe Obiective",
+      "goalDesc": "Concentrat pe livrarea rezultatelor",
+      "innovation": "Inovație",
+      "innovationDesc": "Soluții de vârf",
+      "excellence": "Excelență",
+      "excellenceDesc": "Standarde de calitate premium"
+    }
+  },
+  "services": {
+    "badge": "Serviciile Noastre",
+    "title": "Soluții Digitale",
+    "titleHighlight": "Urbane",
+    "description": "Oferim soluții digitale urbane cuprinzătoare pentru a vă ajuta afacerea să prospere în lumea modernă cu design sofisticat și tehnologie de vârf.",
+    "link": "Explorează Toate Serviciile",
+    "cta": {
+      "title": "Gata să-ți Transformi Prezența Digitală?",
+      "description": "Descoperă gama noastră completă de servicii digitale urbane și duce-ți afacerea la următorul nivel.",
+      "link": "Explorează Toate Serviciile"
+    },
+    "items": {
+      "webDesign": {
+        "title": "Design Web Urban",
+        "description": "Designuri sofisticate, responsive care întruchipează estetica urbană și captează audiența ta.",
+        "features": ["Design Responsive", "Estetică Urbană", "Experiența Utilizatorului"]
+      },
+      "development": {
+        "title": "Dezvoltare Digitală",
+        "description": "Aplicații web rapide, sigure și scalabile construite cu tehnologie urbană de vârf.",
+        "features": ["Stack Modern", "Performanță", "Securitate"]
+      },
+      "mobile": {
+        "title": "Soluții Mobile",
+        "description": "Soluții mobile native și cross-platform cu sofisticare urbană.",
+        "features": ["iOS & Android", "Cross-Platform", "Performanță Nativă"]
+      },
+      "growth": {
+        "title": "Creștere Digitală",
+        "description": "Îmbunătățește-ți vizibilitatea și traficul organic cu strategii digitale urbane.",
+        "features": ["Optimizare SEO", "Analytics", "Strategie de Creștere"]
+      }
+    }
+  },
+  "contact": {
+    "title": "Ia Legătura",
+    "titleHighlight": "Cu Noi",
+    "description": "Gata să începi următorul tău proiect? Să discutăm cum te putem ajuta să-ți atingi obiectivele.",
+    "form": {
+      "title": "Trimite-ne un Mesaj",
+      "fields": {
+        "name": "Nume Complet",
+        "email": "Adresa de Email",
+        "company": "Companie",
+        "phone": "Numărul de Telefon",
+        "service": "Serviciul de Interes",
+        "message": "Mesaj"
+      },
+      "placeholders": {
+        "name": "Numele tău complet",
+        "email": "emailul@tau.com",
+        "company": "Numele companiei tale",
+        "phone": "+40 723 456 789",
+        "service": "Selectează un serviciu",
+        "message": "Spune-ne despre proiectul tău..."
+      },
+      "services": {
+        "webDesign": "Design Web",
+        "webDevelopment": "Dezvoltare Web",
+        "mobileDevelopment": "Dezvoltare Mobile",
+        "seo": "Optimizare SEO",
+        "consulting": "Consulting",
+        "other": "Altele"
+      },
+      "submit": "Trimite Mesajul",
+      "success": "Mesaj Trimis!",
+      "successDesc": "Mulțumim pentru mesaj. Te vom contacta în 24 de ore.",
+      "error": "Ceva nu a mers. Te rog încearcă din nou."
+    },
+    "info": {
+      "title": "Informații de Contact",
+      "email": {
+        "title": "Trimite-ne Email",
+        "description": "Trimite-ne un email oricând",
+        "value": "hello@premium.com"
+      },
+      "phone": {
+        "title": "Sună-ne",
+        "description": "Lun-Vin de la 9:00 la 18:00",
+        "value": "+1 (555) 123-4567"
+      },
+      "location": {
+        "title": "Vizitează-ne",
+        "description": "Vino să ne saluți la birou",
+        "value": "123 Business St, New York, NY 10001"
+      }
+    },
+    "hours": {
+      "title": "Program de Lucru",
+      "monday": "Luni - Vineri",
+      "saturday": "Sâmbătă",
+      "sunday": "Duminică",
+      "closed": "Închis"
+    },
+    "response": {
+      "title": "Răspuns Rapid",
+      "description": "De obicei răspundem la toate întrebările în 24 de ore. Pentru chestiuni urgente, te rugăm să ne suni direct.",
+      "time": "Timp de răspuns: 24 ore"
+    },
+    "map": {
+      "title": "Găsește-ne",
+      "description": "Vizitează biroul nostru sau ia legătura cu noi. Suntem întotdeauna bucuroși să întâlnim clienți noi.",
+      "company": "Urban Digital",
+      "address": "Piața Universității, București, România",
+      "link": "Deschide în Google Maps"
+    }
+  },
+  "footer": {
+    "description": "Creăm experiențe digitale urbane excepționale cu design sofisticat și tehnologie de vârf.",
+    "navigation": "Navigare",
+    "services": "Servicii",
+    "contact": "Contact",
+    "copyright": "Urban Digital. Toate drepturile rezervate.",
+    "madeWith": "Făcut cu pasiune urbană",
+    "links": {
+      "privacy": "Politica de Confidențialitate",
+      "terms": "Termeni și Condiții",
+      "cookies": "Politica Cookie-urilor"
+    }
+  },
+  "common": {
+    "loading": "Se încarcă...",
+    "error": "Eroare",
+    "success": "Succes",
+    "close": "Închide",
+    "menu": "Meniu",
+    "home": "Acasă",
+    "about": "Despre",
+    "services": "Servicii",
+    "portfolio": "Portofoliu",
+    "testimonials": "Testimoniale",
+    "contact": "Contact"
+  }
+}

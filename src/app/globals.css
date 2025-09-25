@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', 'Poppins', 'Roboto', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #121212; /* SimplifyWeb background */
+    color: #F5F5F5; /* SimplifyWeb primary text */
+    line-height: 1.6;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  /* Urban Glass Effects */
+  .glass-effect {
+    @apply backdrop-blur-lg bg-urban-bg-primary/80 border border-urban-text-primary/20;
+  }
+  
+  .glass-effect-dark {
+    @apply backdrop-blur-lg bg-urban-bg-primary/90 border border-urban-text-primary/10;
+  }
+  
+  .glass-effect-card {
+    @apply backdrop-blur-md bg-urban-bg-tertiary/90 border border-urban-accent-teal/20;
+  }
+  
+  /* SimplifyWeb Button Styles */
+  .btn-primary {
+    @apply bg-accent-red hover:bg-accent-red/80 text-text-primary px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-accent;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border-2 border-accent-turquoise text-accent-turquoise hover:bg-accent-turquoise hover:text-text-primary px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:shadow-turquoise;
+  }
+  
+  .btn-outline {
+    @apply bg-transparent border-2 border-urban-text-primary text-urban-text-primary hover:bg-urban-text-primary hover:text-urban-bg-primary px-8 py-4 rounded-xl font-semibold transition-all duration-300;
+  }
+  
+  /* SimplifyWeb Section Styles */
+  .section-padding {
+    @apply py-section-mobile md:py-section;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-6 sm:px-8 lg:px-12;
+  }
+  
+  /* SimplifyWeb Card Styles */
+  .card-simplify {
+    @apply bg-card/80 backdrop-blur-sm border border-card/50 rounded-2xl shadow-card transition-all duration-300 hover:shadow-card-hover hover:scale-105;
+  }
+  
+  .card-simplify-hover {
+    @apply hover:border-accent-turquoise/50 hover:shadow-turquoise;
+  }
+  
+  /* Urban Text Styles */
+  .text-urban-primary {
+    @apply text-urban-text-primary;
+  }
+  
+  .text-urban-secondary {
+    @apply text-urban-text-secondary;
+  }
+  
+  .text-urban-muted {
+    @apply text-urban-text-muted;
+  }
+  
+  /* Urban Background Styles */
+  .bg-urban-primary {
+    @apply bg-urban-bg-primary;
+  }
+  
+  .bg-urban-secondary {
+    @apply bg-urban-bg-secondary;
+  }
+  
+  .bg-urban-card {
+    @apply bg-urban-bg-tertiary;
+  }
+}
+
+@layer utilities {
+  /* Urban Gradients */
+  .text-gradient-urban {
+    @apply bg-gradient-to-r from-urban-accent-teal to-urban-accent-yellow bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-accent {
+    @apply bg-gradient-to-r from-urban-accent-red to-urban-accent-yellow bg-clip-text text-transparent;
+  }
+  
+  .bg-gradient-urban {
+    @apply bg-urban-gradient;
+  }
+  
+  .bg-gradient-card {
+    @apply bg-card-gradient;
+  }
+  
+  .bg-gradient-accent {
+    @apply bg-accent-gradient;
+  }
+  
+  .bg-gradient-teal {
+    @apply bg-teal-gradient;
+  }
+  
+  /* Urban Animations */
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  /* SimplifyWeb Hover Effects */
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-simplify-lg;
+  }
+  
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-turquoise;
+  }
+  
+  .hover-scale {
+    @apply transition-all duration-300 hover:scale-105;
+  }
+  
+  /* Urban Spacing */
+  .space-urban {
+    @apply space-y-8 md:space-y-12 lg:space-y-16;
+  }
+  
+  .gap-urban {
+    @apply gap-8 md:gap-12 lg:gap-16;
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "hero": {
+    "badge": "SimplifyWeb Digital Solutions",
+    "title": "Simplify",
+    "titleHighlight": "Web",
+    "titleEnd": "Solutions",
+    "subtitle": "Crafting exceptional digital experiences with modern simplicity and cutting-edge innovation.",
+    "cta1": "Get Started",
+    "cta2": "View Portfolio",
+    "scrollText": "Scroll Down",
+    "stats": {
+      "projects": "Projects",
+      "success": "Success Rate",
+      "support": "Support"
+    }
+  },
+  "about": {
+    "badge": "About Our Team",
+    "title": "Crafting Urban",
+    "titleHighlight": "Digital",
+    "titleEnd": "Excellence",
+    "description": "We are a passionate team of urban designers and developers dedicated to creating exceptional digital experiences. Our approach combines cutting-edge technology with sophisticated urban aesthetics and timeless design principles.",
+    "link": "Discover Our Story",
+    "features": {
+      "team": "Collaborative Team",
+      "teamDesc": "Diverse expertise working together",
+      "goal": "Goal-Oriented",
+      "goalDesc": "Focused on delivering results",
+      "innovation": "Innovation",
+      "innovationDesc": "Cutting-edge solutions",
+      "excellence": "Excellence",
+      "excellenceDesc": "Premium quality standards"
+    }
+  },
+  "services": {
+    "badge": "Our Services",
+    "title": "Urban Digital",
+    "titleHighlight": "Solutions",
+    "description": "We offer comprehensive urban digital solutions to help your business thrive in the modern world with sophisticated design and cutting-edge technology.",
+    "link": "Explore All Services",
+    "cta": {
+      "title": "Ready to Transform Your Digital Presence?",
+      "description": "Discover our full range of urban digital services and take your business to the next level.",
+      "link": "Explore All Services"
+    },
+    "items": {
+      "webDesign": {
+        "title": "Urban Web Design",
+        "description": "Sophisticated, responsive designs that embody urban aesthetics and captivate your audience.",
+        "features": ["Responsive Design", "Urban Aesthetics", "User Experience"]
+      },
+      "development": {
+        "title": "Digital Development",
+        "description": "Fast, secure, and scalable web applications built with cutting-edge urban technology.",
+        "features": ["Modern Stack", "Performance", "Security"]
+      },
+      "mobile": {
+        "title": "Mobile Solutions",
+        "description": "Native and cross-platform mobile solutions with urban sophistication.",
+        "features": ["iOS & Android", "Cross-Platform", "Native Performance"]
+      },
+      "growth": {
+        "title": "Digital Growth",
+        "description": "Boost your visibility and organic traffic with urban digital strategies.",
+        "features": ["SEO Optimization", "Analytics", "Growth Strategy"]
+      }
+    }
+  },
+  "contact": {
+    "title": "Get In",
+    "titleHighlight": "Touch",
+    "description": "Ready to start your next project? Let's discuss how we can help you achieve your goals.",
+    "form": {
+      "title": "Send us a Message",
+      "fields": {
+        "name": "Full Name",
+        "email": "Email Address",
+        "company": "Company",
+        "phone": "Phone Number",
+        "service": "Service Interested In",
+        "message": "Message"
+      },
+      "placeholders": {
+        "name": "Your full name",
+        "email": "your@email.com",
+        "company": "Your company name",
+        "phone": "+1 (555) 123-4567",
+        "service": "Select a service",
+        "message": "Tell us about your project..."
+      },
+      "services": {
+        "webDesign": "Web Design",
+        "webDevelopment": "Web Development",
+        "mobileDevelopment": "Mobile Development",
+        "seo": "SEO Optimization",
+        "consulting": "Consulting",
+        "other": "Other"
+      },
+      "submit": "Send Message",
+      "success": "Message Sent!",
+      "successDesc": "Thank you for your message. We'll get back to you within 24 hours.",
+      "error": "Something went wrong. Please try again."
+    },
+    "info": {
+      "title": "Contact Information",
+      "email": {
+        "title": "Email Us",
+        "description": "Send us an email anytime",
+        "value": "hello@premium.com"
+      },
+      "phone": {
+        "title": "Call Us",
+        "description": "Mon-Fri from 9am to 6pm",
+        "value": "+1 (555) 123-4567"
+      },
+      "location": {
+        "title": "Visit Us",
+        "description": "Come say hello at our office",
+        "value": "123 Business St, New York, NY 10001"
+      }
+    },
+    "hours": {
+      "title": "Business Hours",
+      "monday": "Monday - Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "closed": "Closed"
+    },
+    "response": {
+      "title": "Quick Response",
+      "description": "We typically respond to all inquiries within 24 hours. For urgent matters, please call us directly.",
+      "time": "Response time: 24 hours"
+    },
+    "map": {
+      "title": "Find Us",
+      "description": "Visit our office or get in touch with us. We're always happy to meet new clients.",
+      "company": "Urban Digital",
+      "address": "Piața Universității, București, România",
+      "link": "Open in Google Maps"
+    }
+  },
+  "footer": {
+    "description": "Creating exceptional urban digital experiences with sophisticated design and cutting-edge technology.",
+    "navigation": "Navigation",
+    "services": "Services",
+    "contact": "Contact",
+    "copyright": "Urban Digital. All rights reserved.",
+    "madeWith": "Made with urban passion",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "close": "Close",
+    "menu": "Menu",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  }
+}
