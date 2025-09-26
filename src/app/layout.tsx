@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import { LanguageProvider } from '@/contexts/LanguageContext'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
 import SchemaMarkup from '@/components/SchemaMarkup'
+import { Analytics } from '@vercel/analytics/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -85,6 +86,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <GoogleAnalytics />
+        <Analytics />
         <LanguageProvider>
           <Navbar />
           <main className="min-h-screen">
