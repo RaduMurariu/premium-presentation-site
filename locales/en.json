@@ -37,10 +37,11 @@
   },
   "services": {
     "badge": "Our Services",
-    "title": "Urban Digital",
-    "titleHighlight": "Solutions",
-    "description": "We offer comprehensive urban digital solutions to help your business thrive in the modern world with sophisticated design and cutting-edge technology.",
-    "link": "Explore All Services",
+    "title": "Our Services",
+    "titleHighlight": "",
+    "titleEnd": "",
+    "description": "At SimplifyWeb, we offer complete digital solutions that help your business grow online. Each service is designed to deliver real results and maximum visibility.",
+    "link": "Request a Custom Quote",
     "cta": {
       "title": "Ready to Transform Your Digital Presence?",
       "description": "Discover our full range of urban digital services and take your business to the next level.",
@@ -48,24 +49,34 @@
     },
     "items": {
       "webDesign": {
-        "title": "Urban Web Design",
-        "description": "Sophisticated, responsive designs that embody urban aesthetics and captivate your audience.",
+        "title": "Web Design & Development",
+        "description": "We create customized, responsive websites with modern design and features adapted to your needs.",
         "features": ["Responsive Design", "Urban Aesthetics", "User Experience"]
       },
-      "development": {
-        "title": "Digital Development",
-        "description": "Fast, secure, and scalable web applications built with cutting-edge urban technology.",
-        "features": ["Modern Stack", "Performance", "Security"]
+      "ecommerce": {
+        "title": "E-Commerce",
+        "description": "Easy-to-manage online stores, optimized for sales and pleasant user experience.",
+        "features": ["Online Shop", "Secure Payments", "Easy Management"]
       },
-      "mobile": {
-        "title": "Mobile Solutions",
-        "description": "Native and cross-platform mobile solutions with urban sophistication.",
-        "features": ["iOS & Android", "Cross-Platform", "Native Performance"]
-      },
-      "growth": {
-        "title": "Digital Growth",
-        "description": "Boost your visibility and organic traffic with urban digital strategies.",
+      "seo": {
+        "title": "SEO & Optimization",
+        "description": "We optimize your website for search engines so you attract relevant clients and quality traffic.",
         "features": ["SEO Optimization", "Analytics", "Growth Strategy"]
+      },
+      "maintenance": {
+        "title": "Maintenance & Support",
+        "description": "We ensure updates, backups and constant support so your website is always online and functional.",
+        "features": ["Daily Backup", "Updates", "24/7 Support"]
+      },
+      "consulting": {
+        "title": "Digital Consulting",
+        "description": "We provide strategic recommendations for your online presence and maximizing digital results.",
+        "features": ["Digital Strategy", "Competitor Analysis", "Recommendations"]
+      },
+      "performance": {
+        "title": "Performance Optimization",
+        "description": "We improve website speed and user experience for better conversions and more traffic.",
+        "features": ["Optimal Speed", "Improved UX", "Better Conversions"]
       }
     }
   },

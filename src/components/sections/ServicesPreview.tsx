@@ -2,37 +2,54 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { ArrowRight, Palette, Code, Smartphone, Search, Zap, Shield, Globe } from 'lucide-react'
+import { ArrowRight, Palette, Code, Smartphone, Search, Zap, Shield, Globe, ShoppingCart, Wrench, Lightbulb } from 'lucide-react'
+import { useLanguage } from '../../contexts/LanguageContext'
 
 const ServicesPreview = () => {
+  const { translations } = useLanguage()
+  
   const services = [
     {
       icon: Palette,
-      title: 'Urban Web Design',
-      description: 'Sophisticated, responsive designs that embody urban aesthetics and captivate your audience.',
+      title: translations.services.items.webDesign.title,
+      description: translations.services.items.webDesign.description,
       color: 'urban-accent-teal',
-      features: ['Responsive Design', 'Urban Aesthetics', 'User Experience']
+      features: translations.services.items.webDesign.features
     },
     {
-      icon: Code,
-      title: 'Digital Development',
-      description: 'Fast, secure, and scalable web applications built with cutting-edge urban technology.',
+      icon: ShoppingCart,
+      title: translations.services.items.ecommerce.title,
+      description: translations.services.items.ecommerce.description,
       color: 'urban-accent-red',
-      features: ['Modern Stack', 'Performance', 'Security']
-    },
-    {
-      icon: Smartphone,
-      title: 'Mobile Solutions',
-      description: 'Native and cross-platform mobile solutions with urban sophistication.',
-      color: 'urban-accent-yellow',
-      features: ['iOS & Android', 'Cross-Platform', 'Native Performance']
+      features: translations.services.items.ecommerce.features
     },
     {
       icon: Search,
-      title: 'Digital Growth',
-      description: 'Boost your visibility and organic traffic with urban digital strategies.',
+      title: translations.services.items.seo.title,
+      description: translations.services.items.seo.description,
+      color: 'urban-accent-yellow',
+      features: translations.services.items.seo.features
+    },
+    {
+      icon: Wrench,
+      title: translations.services.items.maintenance.title,
+      description: translations.services.items.maintenance.description,
       color: 'urban-accent-teal',
-      features: ['SEO Optimization', 'Analytics', 'Growth Strategy']
+      features: translations.services.items.maintenance.features
+    },
+    {
+      icon: Lightbulb,
+      title: translations.services.items.consulting.title,
+      description: translations.services.items.consulting.description,
+      color: 'urban-accent-red',
+      features: translations.services.items.consulting.features
+    },
+    {
+      icon: Zap,
+      title: translations.services.items.performance.title,
+      description: translations.services.items.performance.description,
+      color: 'urban-accent-yellow',
+      features: translations.services.items.performance.features
     },
   ]
 
@@ -63,20 +80,18 @@ const ServicesPreview = () => {
             className="inline-flex items-center gap-2 bg-urban-bg-tertiary/50 backdrop-blur-sm border border-urban-accent-teal/30 rounded-full px-6 py-3 mb-8"
           >
             <Zap className="w-5 h-5 text-urban-accent-teal" />
-            <span className="text-urban-text-secondary font-medium">Our Services</span>
+            <span className="text-urban-text-secondary font-medium">{translations.services.badge}</span>
           </motion.div>
 
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-urban-text-primary mb-8 leading-tight">
-            Urban Digital
-            <span className="block text-gradient-urban">Solutions</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-urban-text-primary mb-8 leading-tight">
+            {translations.services.title}
           </h2>
-          <p className="text-xl text-urban-text-secondary max-w-4xl mx-auto leading-relaxed">
-            We offer comprehensive urban digital solutions to help your business thrive in the modern world 
-            with sophisticated design and cutting-edge technology.
+          <p className="text-lg md:text-xl text-urban-text-secondary max-w-3xl mx-auto leading-relaxed">
+            {translations.services.description}
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
@@ -140,17 +155,17 @@ const ServicesPreview = () => {
             </div>
             
             <h3 className="text-3xl font-bold text-urban-text-primary mb-4">
-              Ready to Transform Your Digital Presence?
+              {translations.services.cta.title}
             </h3>
             <p className="text-urban-text-secondary mb-8 max-w-2xl mx-auto">
-              Discover our full range of urban digital services and take your business to the next level.
+              {translations.services.cta.description}
             </p>
             
             <Link
-              href="/services"
+              href="/contact"
               className="inline-flex items-center gap-3 text-urban-accent-teal hover:text-urban-accent-yellow font-semibold text-lg group transition-colors duration-300"
             >
-              Explore All Services
+              {translations.services.link}
               <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" />
             </Link>
           </div>

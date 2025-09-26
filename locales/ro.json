@@ -37,10 +37,11 @@
   },
   "services": {
     "badge": "Serviciile Noastre",
-    "title": "Soluții Digitale",
-    "titleHighlight": "Urbane",
-    "description": "Oferim soluții digitale urbane cuprinzătoare pentru a vă ajuta afacerea să prospere în lumea modernă cu design sofisticat și tehnologie de vârf.",
-    "link": "Explorează Toate Serviciile",
+    "title": "Serviciile noastre",
+    "titleHighlight": "",
+    "titleEnd": "",
+    "description": "La SimplifyWeb, oferim soluții digitale complete care ajută afacerea ta să crească online. Fiecare serviciu este conceput pentru a oferi rezultate reale și vizibilitate maximă.",
+    "link": "Cere o ofertă personalizată",
     "cta": {
       "title": "Gata să-ți Transformi Prezența Digitală?",
       "description": "Descoperă gama noastră completă de servicii digitale urbane și duce-ți afacerea la următorul nivel.",
@@ -48,24 +49,34 @@
     },
     "items": {
       "webDesign": {
-        "title": "Design Web Urban",
-        "description": "Designuri sofisticate, responsive care întruchipează estetica urbană și captează audiența ta.",
+        "title": "Web Design & Development",
+        "description": "Creăm site-uri personalizate, responsive, cu design modern și funcționalități adaptate nevoilor tale.",
         "features": ["Design Responsive", "Estetică Urbană", "Experiența Utilizatorului"]
       },
-      "development": {
-        "title": "Dezvoltare Digitală",
-        "description": "Aplicații web rapide, sigure și scalabile construite cu tehnologie urbană de vârf.",
-        "features": ["Stack Modern", "Performanță", "Securitate"]
+      "ecommerce": {
+        "title": "E-Commerce",
+        "description": "Magazine online ușor de administrat, optimizate pentru vânzări și experiență plăcută a utilizatorilor.",
+        "features": ["Shop Online", "Plăți Sigure", "Administrare Ușoară"]
       },
-      "mobile": {
-        "title": "Soluții Mobile",
-        "description": "Soluții mobile native și cross-platform cu sofisticare urbană.",
-        "features": ["iOS & Android", "Cross-Platform", "Performanță Nativă"]
-      },
-      "growth": {
-        "title": "Creștere Digitală",
-        "description": "Îmbunătățește-ți vizibilitatea și traficul organic cu strategii digitale urbane.",
+      "seo": {
+        "title": "SEO & Optimizare",
+        "description": "Optimizăm site-ul pentru motoarele de căutare, astfel încât să atragi clienți relevanți și trafic de calitate.",
         "features": ["Optimizare SEO", "Analytics", "Strategie de Creștere"]
+      },
+      "maintenance": {
+        "title": "Mentenanță & Suport",
+        "description": "Asigurăm actualizări, backup-uri și suport constant pentru ca site-ul tău să fie mereu online și funcțional.",
+        "features": ["Backup Zilnic", "Actualizări", "Suport 24/7"]
+      },
+      "consulting": {
+        "title": "Consultanță Digitală",
+        "description": "Îți oferim recomandări strategice pentru prezența ta online și maximizarea rezultatelor digitale.",
+        "features": ["Strategie Digitală", "Analiză Concurență", "Recomandări"]
+      },
+      "performance": {
+        "title": "Optimizare Performanță",
+        "description": "Îmbunătățim viteza site-ului și experiența utilizatorilor pentru conversii mai bune și trafic mai mare.",
+        "features": ["Viteză Optimă", "UX Îmbunătățit", "Conversii Mai Bune"]
       }
     }
   },
