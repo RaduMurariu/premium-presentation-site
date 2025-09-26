@@ -3,28 +3,31 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { ArrowRight, Users, Target, Zap, Award } from 'lucide-react'
+import { useLanguage } from '../../contexts/LanguageContext'
 
 const AboutPreview = () => {
+  const { translations } = useLanguage()
+  
   const values = [
     {
       icon: Users,
-      title: 'Collaborative Team',
-      description: 'Diverse expertise working together'
+      title: translations.about.features.team,
+      description: translations.about.features.teamDesc
     },
     {
       icon: Target,
-      title: 'Goal-Oriented',
-      description: 'Focused on delivering results'
+      title: translations.about.features.goal,
+      description: translations.about.features.goalDesc
     },
     {
       icon: Zap,
-      title: 'Innovation',
-      description: 'Cutting-edge solutions'
+      title: translations.about.features.innovation,
+      description: translations.about.features.innovationDesc
     },
     {
       icon: Award,
-      title: 'Excellence',
-      description: 'Premium quality standards'
+      title: translations.about.features.excellence,
+      description: translations.about.features.excellenceDesc
     }
   ]
 
@@ -51,20 +54,29 @@ const AboutPreview = () => {
               className="inline-flex items-center gap-2 bg-urban-bg-tertiary/50 backdrop-blur-sm border border-urban-accent-teal/30 rounded-full px-6 py-3"
             >
               <Award className="w-5 h-5 text-urban-accent-teal" />
-              <span className="text-urban-text-secondary font-medium">About Our Team</span>
+              <span className="text-urban-text-secondary font-medium">{translations.about.badge}</span>
             </motion.div>
 
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-urban-text-primary leading-tight">
-              Crafting Urban
-              <span className="block text-gradient-urban">Digital</span>
-              <span className="block">Excellence</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-urban-text-primary leading-tight">
+              {translations.about.title}
             </h2>
             
-            <p className="text-xl text-urban-text-secondary leading-relaxed max-w-2xl">
-              We are a passionate team of urban designers and developers dedicated to creating 
-              exceptional digital experiences. Our approach combines cutting-edge technology 
-              with sophisticated urban aesthetics and timeless design principles.
+            <p className="text-lg md:text-xl text-urban-text-secondary leading-relaxed max-w-3xl">
+              {translations.about.description}
             </p>
+
+            {/* Mission, Values, Why */}
+            <div className="max-w-3xl space-y-6 mt-12">
+              <p className="text-urban-text-secondary">
+                <strong className="text-urban-text-primary">{translations.about.mission}</strong>
+              </p>
+              <p className="text-urban-text-secondary">
+                <strong className="text-urban-text-primary">{translations.about.values}</strong>
+              </p>
+              <p className="text-urban-text-secondary">
+                <strong className="text-urban-text-primary">{translations.about.why}</strong>
+              </p>
+            </div>
 
             {/* Urban Values Grid */}
             <div className="grid grid-cols-2 gap-6 mt-12">
@@ -95,10 +107,10 @@ const AboutPreview = () => {
               viewport={{ once: true }}
             >
               <Link
-                href="/about"
+                href="/contact"
                 className="inline-flex items-center gap-3 text-urban-accent-teal hover:text-urban-accent-yellow font-semibold text-lg group transition-colors duration-300"
               >
-                Discover Our Story
+                {translations.about.link}
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" />
               </Link>
             </motion.div>

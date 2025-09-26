@@ -15,12 +15,15 @@
     }
   },
   "about": {
-    "badge": "Despre Echipa Noastră",
-    "title": "Creăm Excelență",
-    "titleHighlight": "Digitală",
-    "titleEnd": "Urbană",
-    "description": "Suntem o echipă pasionată de designeri și dezvoltatori urbani dedicați creării de experiențe digitale excepționale. Abordarea noastră combină tehnologia de vârf cu estetica urbană sofisticată și principiile de design atemporale.",
-    "link": "Descoperă Povestea Noastră",
+    "badge": "Despre SimplifyWeb",
+    "title": "Despre SimplifyWeb",
+    "titleHighlight": "",
+    "titleEnd": "",
+    "description": "La SimplifyWeb, ne dedicăm să transformăm ideile clienților noștri în soluții digitale eficiente și moderne. Creăm site-uri care nu doar arată bine, ci și generează rezultate reale pentru afacerea ta.",
+    "link": "Contactează-ne",
+    "mission": "Misiunea noastră: Să oferim soluții web care cresc vizibilitatea online și atrag clienți potriviți.",
+    "values": "Valorile noastre: Profesionalism, transparență, inovație și suport dedicat clienților.",
+    "why": "De ce noi? Pentru că livrăm proiecte la timp, cu atenție la detalii și cu un design adaptat brandului tău.",
     "features": {
       "team": "Echipă Colaborativă",
       "teamDesc": "Expertiză diversă care lucrează împreună",

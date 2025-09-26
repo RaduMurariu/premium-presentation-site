@@ -15,12 +15,15 @@
     }
   },
   "about": {
-    "badge": "About Our Team",
-    "title": "Crafting Urban",
-    "titleHighlight": "Digital",
-    "titleEnd": "Excellence",
-    "description": "We are a passionate team of urban designers and developers dedicated to creating exceptional digital experiences. Our approach combines cutting-edge technology with sophisticated urban aesthetics and timeless design principles.",
-    "link": "Discover Our Story",
+    "badge": "About SimplifyWeb",
+    "title": "About SimplifyWeb",
+    "titleHighlight": "",
+    "titleEnd": "",
+    "description": "At SimplifyWeb, we are dedicated to transforming our clients' ideas into efficient and modern digital solutions. We create websites that not only look good, but also generate real results for your business.",
+    "link": "Contact Us",
+    "mission": "Our mission: To provide web solutions that increase online visibility and attract the right clients.",
+    "values": "Our values: Professionalism, transparency, innovation and dedicated client support.",
+    "why": "Why us? Because we deliver projects on time, with attention to detail and with a design adapted to your brand.",
     "features": {
       "team": "Collaborative Team",
       "teamDesc": "Diverse expertise working together",
