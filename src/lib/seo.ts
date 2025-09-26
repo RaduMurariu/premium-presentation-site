@@ -1,78 +1,179 @@
-import { NextSeoProps } from 'next-seo'
-
-export const defaultSEO: NextSeoProps = {
-  title: 'Premium Presentation Site',
-  description: 'A premium presentation website with Apple-like design, featuring modern UI/UX, responsive design, and exceptional user experience.',
-  canonical: 'https://premium-presentation-site.com',
+// SEO Configuration and utilities
+export const seoConfig = {
+  siteName: 'SimplifyWeb',
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://simplifyweb.ro',
+  defaultTitle: 'SimplifyWeb - Premium Digital Solutions',
+  titleTemplate: '%s | SimplifyWeb',
+  description: 'SimplifyWeb offers premium digital solutions including web design, development, mobile apps, and digital marketing. Transform your business with our cutting-edge technology and sophisticated design.',
+  keywords: [
+    'web design',
+    'web development', 
+    'mobile development',
+    'digital marketing',
+    'SEO optimization',
+    'premium websites',
+    'modern design',
+    'business solutions',
+    'digital transformation',
+    'SimplifyWeb'
+  ],
+  author: 'SimplifyWeb Team',
+  twitter: '@simplifyweb',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://premium-presentation-site.com',
-    siteName: 'Premium Presentation Site',
-    title: 'Premium Presentation Site',
-    description: 'A premium presentation website with Apple-like design, featuring modern UI/UX, responsive design, and exceptional user experience.',
+    siteName: 'SimplifyWeb',
     images: [
       {
-        url: 'https://premium-presentation-site.com/og-image.jpg',
+        url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Premium Presentation Site',
+        alt: 'SimplifyWeb - Premium Digital Solutions',
       },
     ],
   },
-  twitter: {
-    handle: '@premiumsite',
-    site: '@premiumsite',
-    cardType: 'summary_large_image',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
-  additionalMetaTags: [
-    {
-      name: 'viewport',
-      content: 'width=device-width, initial-scale=1',
+}
+
+// Generate page-specific metadata
+export function generateMetadata({
+  title,
+  description,
+  keywords = [],
+  image,
+  url,
+}: {
+  title?: string
+  description?: string
+  keywords?: string[]
+  image?: string
+  url?: string
+}) {
+  const fullTitle = title ? `${title} | ${seoConfig.siteName}` : seoConfig.defaultTitle
+  const fullDescription = description || seoConfig.description
+  const fullKeywords = [...seoConfig.keywords, ...keywords]
+  const fullUrl = url ? `${seoConfig.siteUrl}${url}` : seoConfig.siteUrl
+  const fullImage = image ? `${seoConfig.siteUrl}${image}` : `${seoConfig.siteUrl}/og-image.jpg`
+
+  return {
+    title: fullTitle,
+    description: fullDescription,
+    keywords: fullKeywords,
+    openGraph: {
+      ...seoConfig.openGraph,
+      title: fullTitle,
+      description: fullDescription,
+      url: fullUrl,
+      images: [
+        {
+          url: fullImage,
+          width: 1200,
+          height: 630,
+          alt: fullTitle,
+        },
+      ],
     },
-    {
-      name: 'theme-color',
-      content: '#0ea5e9',
+    twitter: {
+      card: 'summary_large_image',
+      title: fullTitle,
+      description: fullDescription,
+      images: [fullImage],
     },
-    {
-      name: 'robots',
-      content: 'index, follow',
-    },
-  ],
+    robots: seoConfig.robots,
+  }
 }
 
-export const homeSEO: NextSeoProps = {
-  ...defaultSEO,
-  title: 'Premium Presentation Site - Modern Digital Solutions',
-  description: 'Creating exceptional digital experiences with premium design and cutting-edge technology. Professional web design, development, and digital solutions.',
-}
+// Generate structured data for different page types
+export function generateStructuredData(type: 'organization' | 'service' | 'website' | 'contact') {
+  const baseUrl = seoConfig.siteUrl
 
-export const aboutSEO: NextSeoProps = {
-  ...defaultSEO,
-  title: 'About Us - Premium Presentation Site',
-  description: 'Learn about our story, values, and the team behind our premium digital experiences. We are passionate about creating exceptional digital solutions.',
-}
+  switch (type) {
+    case 'organization':
+      return {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": seoConfig.siteName,
+        "description": seoConfig.description,
+        "url": baseUrl,
+        "logo": `${baseUrl}/logo.png`,
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-555-123-4567",
+          "contactType": "customer service",
+          "email": "hello@simplifyweb.ro"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Business St",
+          "addressLocality": "New York",
+          "addressRegion": "NY",
+          "postalCode": "10001",
+          "addressCountry": "US"
+        },
+        "sameAs": [
+          "https://facebook.com/simplifyweb",
+          "https://twitter.com/simplifyweb",
+          "https://linkedin.com/company/simplifyweb"
+        ]
+      }
 
-export const servicesSEO: NextSeoProps = {
-  ...defaultSEO,
-  title: 'Services - Premium Digital Solutions',
-  description: 'Discover our comprehensive range of premium digital services including web design, development, mobile apps, and SEO optimization.',
-}
+    case 'service':
+      return {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Digital Solutions",
+        "description": "Comprehensive digital services including web design, development, mobile apps, and digital marketing",
+        "provider": {
+          "@type": "Organization",
+          "name": seoConfig.siteName
+        },
+        "serviceType": "Digital Marketing Services",
+        "areaServed": "Worldwide"
+      }
 
-export const portfolioSEO: NextSeoProps = {
-  ...defaultSEO,
-  title: 'Portfolio - Our Premium Digital Projects',
-  description: 'Explore our portfolio of premium digital projects and see the quality of our work. From web design to mobile development.',
-}
+    case 'website':
+      return {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": seoConfig.siteName,
+        "url": baseUrl,
+        "description": seoConfig.description,
+        "publisher": {
+          "@type": "Organization",
+          "name": seoConfig.siteName
+        }
+      }
 
-export const testimonialsSEO: NextSeoProps = {
-  ...defaultSEO,
-  title: 'Client Testimonials - Premium Presentation Site',
-  description: 'Read what our clients say about our premium digital services and exceptional results. Real feedback from satisfied customers.',
-}
+    case 'contact':
+      return {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Us",
+        "description": "Get in touch with SimplifyWeb for your digital solutions",
+        "url": `${baseUrl}/contact`,
+        "mainEntity": {
+          "@type": "Organization",
+          "name": seoConfig.siteName,
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-555-123-4567",
+            "contactType": "customer service",
+            "email": "hello@simplifyweb.ro"
+          }
+        }
+      }
 
-export const contactSEO: NextSeoProps = {
-  ...defaultSEO,
-  title: 'Contact Us - Get In Touch',
-  description: 'Get in touch with us for your next premium digital project. We are here to help you achieve your digital goals.',
+    default:
+      return {}
+  }
 }

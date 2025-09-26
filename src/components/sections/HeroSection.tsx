@@ -48,18 +48,16 @@ const HeroSection = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.3 }}
-                    className="text-6xl md:text-8xl lg:text-9xl font-black text-text-primary mb-8 leading-tight"
+                    className="text-4xl md:text-6xl lg:text-7xl font-black text-text-primary mb-8 leading-tight"
                   >
-                    <span className="block">{translations.hero.title}</span>
-                    <span className="block bg-gradient-to-r from-accent-turquoise to-accent-yellow bg-clip-text text-transparent">{translations.hero.titleHighlight}</span>
-                    <span className="block">{translations.hero.titleEnd}</span>
+                    {translations.hero.title}
                   </motion.h1>
                   
                   <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.5 }}
-                    className="text-xl md:text-2xl lg:text-3xl text-text-secondary mb-12 max-w-3xl mx-auto leading-relaxed font-light"
+                    className="text-lg md:text-xl text-text-secondary mb-12 max-w-2xl mx-auto leading-relaxed"
                   >
                     {translations.hero.subtitle}
                   </motion.p>
@@ -70,15 +68,21 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.7 }}
             className="flex flex-col sm:flex-row gap-6 justify-center items-center"
           >
-            <button className="btn-primary text-lg px-10 py-5 group">
+            <a
+              href="/contact"
+              className="btn-primary text-lg px-10 py-5 group inline-block"
+            >
               <span className="flex items-center gap-3">
                 <Zap className="w-5 h-5 group-hover:animate-pulse" />
                 {translations.hero.cta1}
               </span>
-            </button>
-            <button className="btn-secondary text-lg px-10 py-5">
+            </a>
+            <a
+              href="/portfolio"
+              className="btn-secondary text-lg px-10 py-5 inline-block"
+            >
               {translations.hero.cta2}
-            </button>
+            </a>
           </motion.div>
 
                   {/* SimplifyWeb Stats */}

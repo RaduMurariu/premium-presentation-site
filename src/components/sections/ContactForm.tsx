@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { Send, CheckCircle } from 'lucide-react'
+import { trackContactForm } from '@/lib/analytics'
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -43,6 +44,9 @@ const ContactForm = () => {
 
       if (response.ok) {
         setIsSubmitted(true)
+        
+        // Track contact form submission
+        trackContactForm(formData.service || 'general')
         
         // Reset form after 3 seconds
         setTimeout(() => {
